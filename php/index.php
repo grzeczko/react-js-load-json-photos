@@ -26,3 +26,5 @@
 
   uksort($occurrences, "compare_months");
   print_r(json_encode($occurrences));
+
+  // Result is: {"January":2,"March":1,"June":1,"December":1}
