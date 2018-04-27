@@ -1,0 +1,14 @@
+function binaryNums(n) {
+	if (n < 2) {
+  	return n;
+  }
+  else {
+  	return binaryNums(Math.floor(n/2)) + n%2;
+  }
+}
+
+
+SELECT COUNT(id) AS total_orders FROM Orders WHERE customer_id = {id}
+SELECT name FROM Customers C LEFT JOIN Orders O ON C.id = O.customer_id GROUP BY name HAVING COUNT(O.id) >= 3
+SELECT name FROM Customers C LEFT JOIN Orders O ON C.id = O.customer_id WHERE O.item_name = "test item"
+SELECT name FROM Customers C LEFT JOIN Orders O ON C.id = O.customer_id WHERE O.item_name != "test item"
