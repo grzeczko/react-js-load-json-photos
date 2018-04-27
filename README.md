@@ -1,1 +1,3 @@
-"# react-js-load-json-photos" 
+# run `npm install`
+# `npm run build`
+# `npm run server`
